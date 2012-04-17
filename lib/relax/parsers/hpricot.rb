@@ -112,6 +112,9 @@ module Relax
 
       # Gets a time value.
       def time_value(value)
+        if value(value) == ''
+          return nil
+        end
         Time.parse(value(value))
       end
 
